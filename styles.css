@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+header {
+    background-image: url("https://imgs.search.brave.com/YxrBCG6rA0kgkLcpbW597qGekeDddmcYag2aUXUc_B4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdHls/ZXMucmVkZGl0bWVk/aWEuY29tL3Q1X2Fi/c3ZmL3N0eWxlcy9i/YW5uZXJCYWNrZ3Jv/dW5kSW1hZ2VfdTRy/c3N5OGVwOTA5MS5w/bmc");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a{
+    color: aliceblue;
+    font-size: 14pt;
+}
+
+section.main-content {
+    padding: 20px;
+}
+
+footer {
+    background-image: url("https://imgs.search.brave.com/RhDpqAc7m0ClEphZ38qlPcWaPAIzfxtY-nuAE9MOFTQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/bG91ZC1zdG9yYWdl/LWJhY2tncm91bmQt/YnVzaW5lc3MtbmV0/d29yay1kZXNpZ25f/NTM4NzYtMTYwMjUy/LmpwZz9zaXplPTYy/NiZleHQ9anBn");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+/*new content*/
+section.main-content {
+    padding: 20px;
+}
+
+.portfolio-gallery {
+    width: 1440px; /* Fixed width */
+    height: 780px; /* Fixed height */
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.portfolio-item {
+    width: calc(33.33% - 20px); /* Adjust the width based on the number of columns you want */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+.portfolio-item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.portfolio-item:hover p {
+    opacity: 1;
+}
+.link{
+    color:dimgrey;
+}
